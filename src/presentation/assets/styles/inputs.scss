@@ -1,0 +1,92 @@
+.btn-primary {
+  @apply rounded-md bg-primary-300 text-white font-bold text-sm px-2 py-1 flex gap-2 items-center;
+}
+.typewriter h1 {
+  overflow: hidden;
+  @apply overflow-hidden border-r-2 whitespace-nowrap mx-0 my-auto border-yellow-300;
+  letter-spacing: .15em;
+  animation:
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FACA15; }
+}
+
+
+@media (min-width: 1023px) {
+  .card {
+    @apply card-sm;
+  }
+}
+
+.card-sm {
+  @apply gap-10 bg-white rounded-xl;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-info {
+  @apply bg-white rounded-xl border-primary-300;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.05);
+  border-left-width: 21px;
+}
+
+.radial-progress {
+  position: relative;
+  display: inline-grid;
+  height: var(--size);
+  width: var(--size);
+  place-content: center;
+  border-radius: 9999px;
+  background-color: transparent;
+  vertical-align: middle;
+  box-sizing: content-box;
+  --value: 0;
+  --size: 10rem;
+  --thickness: calc(var(--size) / 15);
+}
+
+.radial-progress:before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(farthest-side,currentColor 98%,#0000) top/var(--thickness) var(--thickness) no-repeat,conic-gradient(currentColor calc(var(--value) * 1%),#0000 0);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--thickness)),#000 calc(100% - var(--thickness)));
+  mask: radial-gradient(farthest-side,#8AD2D7 calc(99% - var(--thickness)),#8AD2D7 calc(100% - var(--thickness)));
+}
+
+.radial-progress:before, .radial-progress:after {
+  position: absolute;
+  border-radius: 100%;
+  content: "";
+}
+
+.side-fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 12345678902;
+  transition: 0.3s all ease;
+  transition: 0.2s all;
+  padding: 0 0;
+  width: 420px;
+  transform: translateX(420px);
+}
+
+.side-fixed-container {
+  position: absolute;
+  top: 216px;
+  left: -60px;
+  width: 60px;
+  border-radius: 5px;
+  box-shadow: -10px 0px 20px 2px rgb(0 0 0 / 6%);
+}
