@@ -1,11 +1,12 @@
 # My Curriculum Vitae
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project contains information from my resume.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `cp .env.example .env`
 ### `npm start`
 
 Runs the app in the development mode.\
