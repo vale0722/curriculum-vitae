@@ -1,5 +1,5 @@
 import React from 'react';
-import config from '../../../domain/config';
+import config from 'domain/config';
 
 const Navbar = () => (
   <header
@@ -12,6 +12,7 @@ const Navbar = () => (
       id='mobile-menu-button'
       className='m-2 rounded-md p-2 hover:bg-gray-700 hover:text-white focus:outline-none lg:hidden'
     >
+      <input type='text' className='hidden' id='menu-open' />
       <svg
         id='menu-open-icon'
         className='h-6 w-6 transition duration-200 ease-in-out'

@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from '../components/atoms/Header';
-import Works from '../components/molecules/Works';
-import Educations from '../components/molecules/Educations';
-import Additional from '../components/molecules/Additional';
-import Idioms from '../components/molecules/Idioms';
-import Hobbies from '../components/molecules/Hobbies';
-import Languages from '../components/molecules/Languages';
-import Knowledge from '../components/molecules/Knowledge';
-import Networks from '../components/molecules/Networks';
+import Header from 'presentation/components/atoms/Header';
+import Works from 'presentation/components/molecules/Works';
+import Educations from 'presentation/components/molecules/Educations';
+import Additional from 'presentation/components/molecules/Additional';
+import Idioms from 'presentation/components/molecules/Idioms';
+import Hobbies from 'presentation/components/molecules/Hobbies';
+import Languages from 'presentation/components/molecules/Languages';
+import Knowledge from 'presentation/components/molecules/Knowledge';
+import Networks from 'presentation/components/molecules/Networks';
 
 export default function HomePage() {
   return (

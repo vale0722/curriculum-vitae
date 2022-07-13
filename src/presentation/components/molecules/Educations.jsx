@@ -1,6 +1,6 @@
 import React from 'react';
-import config from '../../../domain/config';
-import CardInfo from '../atoms/CardInfo';
+import config from 'domain/config';
+import CardInfo from 'presentation/components/atoms/CardInfo';
 
 const Educations = () => (
   <>
