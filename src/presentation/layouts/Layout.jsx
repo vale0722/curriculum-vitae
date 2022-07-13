@@ -1,7 +1,7 @@
 import React from 'react';
-import '../assets/styles/navbar.scss';
-import { Sidebar, Navbar } from '../components/organisms';
-import Networks from '../components/molecules/Networks';
+import 'presentation/assets/styles/navbar.scss';
+import { Sidebar, Navbar } from 'presentation/components/organisms';
+import Networks from 'presentation/components/molecules/Networks';
 
 export default function Layout({ children }) {
   return (

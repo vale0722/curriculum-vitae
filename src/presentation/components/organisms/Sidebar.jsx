@@ -1,9 +1,9 @@
 import React from 'react';
-import config from '../../../domain/config';
-import BasicInformation from '../molecules/BasicInformation';
-import Languages from '../molecules/Languages';
-import Knowledge from '../molecules/Knowledge';
-import Networks from '../molecules/Networks';
+import config from 'domain/config';
+import BasicInformation from 'presentation/components/molecules/BasicInformation';
+import Languages from 'presentation/components/molecules/Languages';
+import Knowledge from 'presentation/components/molecules/Knowledge';
+import Networks from 'presentation/components/molecules/Networks';
 
 const Sidebar = () => (
   <aside
@@ -17,6 +17,7 @@ const Sidebar = () => (
             htmlFor='menu-open'
             className='m-2 cursor-pointer rounded-md !bg-transparent p-2 lg:hidden'
           >
+            <input type='text' className='hidden' id='menu-open' />
             <img
               className='h-5 w-5'
               src={`${config.statics}icons/times.svg`}
