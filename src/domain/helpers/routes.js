@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from '../../presentation/pages/HomePage';
+import HomePage from 'presentation/pages/HomePage';
 
 function RenderRoutes({ routes }) {
   return (

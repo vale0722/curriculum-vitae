@@ -1,5 +1,5 @@
 import React from 'react';
-import config from '../../../domain/config';
+import config from 'domain/config';
 
 const Networks = ({ vertical = false }) => (
   <div
