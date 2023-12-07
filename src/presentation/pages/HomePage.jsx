@@ -8,6 +8,7 @@ import Hobbies from 'presentation/components/molecules/Hobbies';
 import Languages from 'presentation/components/molecules/Languages';
 import Knowledge from 'presentation/components/molecules/Knowledge';
 import Networks from 'presentation/components/molecules/Networks';
+import config from 'domain/config';
 
 export default function HomePage() {
   return (
@@ -23,7 +24,7 @@ export default function HomePage() {
           </span>
           <div className='flex w-full items-center justify-center gap-6 p-6 text-center text-sm font-bold lg:flex-col'>
             <div className='flex h-12 w-12 items-center justify-center rounded-full bg-primary-300 text-2xl font-extrabold'>
-              2
+              {config.information.experience.age}
             </div>
             Años de experiencia
           </div>

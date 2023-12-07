@@ -1,4 +1,19 @@
+function calculateAge(birthday) {
+  const birthday_arr = birthday.split('/');
+  const birthday_date = new Date(
+    birthday_arr[2],
+    birthday_arr[1] - 1,
+    birthday_arr[0]
+  );
+  const ageDifMs = Date.now() - birthday_date.getTime();
+  const ageDate = new Date(ageDifMs);
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
 module.exports = {
+  experience: {
+    age: `${calculateAge('20/04/2020')}`,
+  },
   basic: [
     {
       title: 'Residencia',
@@ -10,7 +25,7 @@ module.exports = {
     },
     {
       title: 'Edad',
-      content: '21 Años',
+      content: `${calculateAge('07/01/2001')} Años`,
     },
     {
       title: 'Correo Electrónico',
@@ -34,12 +49,17 @@ module.exports = {
       title: 'NodeJs',
       content: '60',
     },
+    {
+      title: 'Go',
+      content: '40',
+    },
   ],
   knowledge: [
     'SQL, Firebase, MongoDB',
     'CSS, SASS, Tailwind, Bootstrap',
     'TDD, Jest, Cypress',
     'Static Analysis Tools , CI/CD',
+    'Practicas Devops, AWS, Cloud',
     'Flexible a las nuevas tecnologías',
   ],
   networks: [
@@ -76,6 +96,11 @@ module.exports = {
       title: 'Semi Senior Development',
       logo: 'evertec.png',
       dates: 'Mayo 2022 - Actual',
+    },
+    {
+      title: 'Senior Development',
+      logo: 'evertec.png',
+      dates: 'Noviembre 2023 - Actual',
     },
   ],
   educations: [
